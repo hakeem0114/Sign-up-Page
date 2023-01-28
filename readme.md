@@ -1,3 +1,3 @@
-#Sign-Up Page
+# Sign-Up Page
 
 Uses intermediate HTML & CSS techniques
