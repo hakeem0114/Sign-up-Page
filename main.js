@@ -13,9 +13,9 @@ let error = document.getElementById("error");
 
 button.addEventListener("click",(e)=>{
     console.log("event")
-    if(password1.value == "" && password2.value == ""){
+    if(password1.value === "" && password2.value === ""){
         error.textContent = ""
-    } 
+    }else 
     
     if(password1.value === password2.value){
         error.style.color = "green";
