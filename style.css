@@ -2,6 +2,8 @@
     box-sizing:border-box;
     margin: 0;
     padding: 0;
+
+    --new-green:  #596D48;
 }
 
 @font-face {
@@ -27,6 +29,11 @@
 } 
 
 .hero{
+
+    display: flex;
+    align-items: center;
+
+
     background-image: url(./images/deer.png );
     background-size: no-repeat;
     background-size: cover; /*Scales image with same ratio to container*/
@@ -39,8 +46,7 @@
     color: rgb(204, 86, 51);
     font-size: larger;
 
-    display: flex;
-    align-items: center;
+
 }
 
 .right-container{
@@ -51,30 +57,59 @@
 }
 .top{
     height:30%;
-   
-    background-color: #f8f8f8;
-
+    background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     padding-top: 40px;
+    padding-left: 1rem;
+    box-shadow: 0 0 10px  #b8bbc0 ;
+   
 }
 
 .middle{
     height:30%;
-    box-shadow: 5px 10px 5px #f0f5f2;
 }
-.bottom{
-    height:40%;
-    background-color: #c5ccc5;
+
+.middle-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 2rem;
 
 }
 
+input{
+    border:1px solid rgb(202, 191, 191);
+    border-radius: .25rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+
+    margin: 3rem;
+    gap: 0.5rem;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+
+    margin: 3rem;
+    gap: 0.5rem;
+}
+
+.left > input, .right > input{
+    padding: .25rem;
+}
 
 input:focus{
-    border-color: #c9db21;
+    outline: none;
+    box-shadow: 0 0 10px #719ECE;
+    border-color: #66afe9;
 }
 
 input:invalid{
@@ -83,3 +118,50 @@ input:invalid{
 input:valid{
     border-color: solid rgb(61, 185, 99);
 }
+
+
+.bottom{
+    height:40%;
+    background-color: #dadce0;
+    box-shadow: 0 0 10px  #b8bbc0 ;
+}
+
+.footer{
+    margin-left: 10rem;
+    text-decoration: none;
+    margin-top: 3rem;
+}
+
+.para{
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+.para a{
+    text-decoration: none;
+}
+
+a{
+    color: var(--new-green);
+    font-weight: bold;
+}
+
+.para a:focus{
+    color: rgb(120, 141, 120);
+}
+
+.account{
+    background-color:var(--new-green);
+
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+}
+
+.account:focus{
+    transform: scale(1.05);
+} 
+
