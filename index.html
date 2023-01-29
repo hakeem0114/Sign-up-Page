@@ -11,14 +11,18 @@
     <div class="main">
         <div class="left-container">
             <div class="hero">
-                <p>Buck Residences</p>
+                <div class="hero-back">
+                    <img id="deer" src="./images/deer3.png" alt="Deer" height="300px" width="250px">
+                   <h1>Buck Residences</h1>
+                </div>
+                
             </div>
             
         </div>
     
         <div class="right-container">
             <div class="top">
-                <h4>Greenway Retirement Residence is historically situated on the Dale Estate nursery, in the heart of downtown Brampton. <br>
+                <h4>Buck Residences is historically situated on the Dale Estate nursery, in the heart of downtown Brampton. <br>
                      With unmatched beautiful grounds and landscaping, here residents can enjoy large and spacious common areas, <br> 
                      ground floor suites with walk out to a private patio and affordable suites options. </h4>
                 <br> <br>
@@ -29,27 +33,29 @@
                 <form action="#" method="post" class="middle-form">
                     
                         <div class="left">
-                            <label for="name">First Name</label>
+                            <label for="name">FIRST NAME</label>
                             <input type="text" placeholder="John" id="name" required>                             
 
-                            <label for="email">Email</label>
+                            <label for="email">EMAIL</label>
                             <input type="email" placeholder="user@gmail.com" id="email" required>
                     
-                            <label for="password">Password</label>  <! Password validation in Js>
+                            <label for="password">PASSWORD</label>  <! Password validation in Js>
                             <input type="password" placeholder="&Random2005" id="password" required>
+                            <p id="error">P</p>
     
                         </div>
 
                          <div class="right">
-                            <label for="name">Last Name</label>
+                            <label for="name">LAST NAME</label>
                             <input type="text" placeholder="Wick" id="name" required>
                       
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">PHONE NUMBER</label>
                             <input type="tel" placeholder="(123)-456-7890" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                              minlength="9" maxlength="9" required>
                             
-                            <label for="password">Confirm Password</label> 
-                            <input type="password" placeholder="&Random2005" id="password" required>
+                            <label for="password2">CONFIRM PASSWORD</label> 
+                            <input type="password" minlength="1" placeholder="&Random2005" id="password2" required>
+                            <p></p>
     
                          </div>         
                    
@@ -60,7 +66,7 @@
 
             <div class="bottom">
                 <div class="footer">
-                    <button class="account">Create Account</div>
+                    <button type="submit" class="account">Create Account</div>
                         <p class="para" >Already have an account?  <a href="#">Log in</a> </p>
                 
                 </div>
@@ -71,4 +77,5 @@
     </div>
 
 </body>
+<script src="main.js"></script>
 </html>
